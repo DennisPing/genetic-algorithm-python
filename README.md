@@ -39,5 +39,5 @@ Fitness Score: 1.0
 
 ### Input criteria
 
-- The genome length (number of integers in an individual) greater than or equal to 2. Otherwise you cannot split the genome.
+- The genome length (number of integers in an individual) must be greater than or equal to 2. Otherwise you cannot split the genome.
 - The population count must be greater than or equal to 2. Otherwise you cannot do gene crossover.

@@ -42,8 +42,12 @@ class GeneticAlgorithm:
             raise ValueError(f"The minimum genome length is 2.")
         if popCount < 2:
             raise ValueError(f"The minimum population count is 2.")
+        if target <= 0:
+            raise ValueError(f"The goal number cannot be 0 or negative.")
         if low < 0:
             raise ValueError(f"The minimum possible integer cannot be negative.")
+        if high <= low:
+            raise ValueError(f"The maximum possible integer cannot be less than or equal to the minimum possible integer.")
         self.genomeLength = genomeLength
         self.popCount = popCount
         self.target = target
